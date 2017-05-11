@@ -9,10 +9,10 @@
     <p id = "sayHello"></p>
     <script type="text/javascript">	 //导入javascript，这里面写的都是javascript内容。
        
-       var yourName = prompt("what is yourName?");
+       var yourName = prompt("what is yourName?");//弹出输入框，将输入内容赋值到yourName.
 
        if(yourName != null){
-       	document.getElementById("sayHello").innerHTML = "Hello " + yourName;
+       	document.getElementById("sayHello").innerHTML = "Hello " + yourName;//通过id属性获得sayHello,这个属性的所有标签，对其进行插入html操作
        }else{
        	alert("Please enter a name next time");
        }
