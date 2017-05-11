@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Javascript
+  	</title>
+  </head>
+  <body>
+    <p id = "sayHello"></p>
+    <script type="text/javascript">	 //导入javascript，这里面写的都是javascript内容。
+       
+       var yourName = prompt("what is yourName?");
+
+       if(yourName != null){
+       	document.getElementById("sayHello").innerHTML = "Hello " + yourName;
+       }else{
+       	alert("Please enter a name next time");
+       }
+
+    </script>
+  </body>
+</html>
