@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript
+    </title>
+  </head>
+  <body>
+  
+    <script type="text/javascript">  //导入javascript，这里面写的都是javascript内容。
+       
+       //字符串相关，包括split()等等。。。
+       var randStr = "A long " + "string that " + "goes on and on";
+       document.write("String Length ", randStr.length + "<br/>");
+       document.write("Index for \"goes\" : ", randStr.indexOf("goes"), "<br/>");//索引一个字符，返回它在整个字符串中的位置，以数字表示。
+       document.write(randStr.slice(19, 23) + "<br/>");//返回从字符串位置19到23的字符
+       document.write(randStr.slice(19) + "<br/>");//返回位置19之后的所有字符
+       document.write(randStr.substr(19, 4) + "<br/>");//返回位置19（包括19）后面4个字符
+       document.write(randStr.replace("and on", "forever") + "<br/");// 使用forever 替代 and on
+
+       //使用字符串的style（样式）属性，可以直接输出不同样式的字符串。
+       var strToStyle = "Random String";
+
+       document.write("Big : ", strToStyle.big(), "<br/>");
+       document.write("Bold : ", strToStyle.bold(), "<br/>");
+       document.write("Font Color : ", strToStyle.fontcolor("green"), "<br/>");
+       document.write("Font Size : ", strToStyle.fontsize("8em"), "<br/>");
+       document.write("Italics : ", strToStyle.italics(), "<br/>");
+       document.write("Google : ", strToStyle.link("http://google.com"), "<br/>");
+       document.write("Small : ", strToStyle.small(), "<br/>");
+       document.write("Strike : ", strToStyle.strike(), "<br/>");//横线划去
+       document.write("Sub : ", strToStyle.sub(), "<br/>" );
+       document.write("Sup : ", strToStyle.sup(), "<br/>");
+    </script>
+  </body>
+</html>
