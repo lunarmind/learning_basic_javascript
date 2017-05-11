@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript
+    </title>
+  </head>
+  <body>
+  
+    <script type="text/javascript">  //导入javascript，这里面写的都是javascript内容。
+       
+       document.write("5 + 4 = ", 5 + 4,  "<br/>");
+       document.write("5 - 4 = ", 5 - 4,  "<br/>");
+       document.write("5 * 4 = ", 5 * 4,  "<br/>");
+       document.write("5 / 4 = ", 5 / 4,  "<br/>");
+       document.write("5 % 4 = ", 5 % 4,  "<br/>");  //取余数计算
+       
+       document.write("Max Num = ", Number.MAX_VALUE, "<br/>");
+       document.write("Min Num = ", Number.MIN_VALUE, "<br/>");//这个应该是看计算机上能显示的数值最大和最小值。
+
+       precisionTest = 0.1000000000000001;
+       document.write(precisionTest + 0.1000000000000001, "<br/>");//这个可以看出计算机能处理小数点后最多多少位。
+
+       var randNum1 = 5;
+       var randNum2 = 5;
+       document.write("randNum1++ = ", randNum1++, "<br/>");//先赋值，后计算（选中本行所有内容的快捷键，ctrl+L）
+       document.write("++randNum2 = ", ++randNum2, "<br/>");//先计算，后赋值,同样适合自减运算
+
+       var randNum = 5;
+       document.write("randNum += ", randNum += 5, "<br/>");
+       document.write("randNum -= ", randNum -= 5, "<br/>");
+       document.write("randNum *= ", randNum *= 5, "<br/>");
+       document.write("randNum /= ", randNum /= 5, "<br/>");//运算表达式简写，同其他编程语言
+
+      //一些数学运算
+      document.write("Math.E = ", Math.E, "<br/>");
+      document.write("Math.PI = ", Math.PI, "<br/>");
+      document.write("Math.abs(-8) = ", Math.abs(-8), "<br/>");
+      document.write("Math.cbrt(1000) = ", Math.cbrt(1000), "<br/>");//3次根号
+      document.write("Math.sqrt(100) = ", Math.sqrt(100), "<br/>");
+      document.write("Math.ceil(6.45) = ", Math.ceil(6.45), "<br/>");//向上取整
+      document.write("Math.floor(6.45) = ", Math.floor(6.45), "<br/>");//向下取整
+      document.write("Math.round(6.55) = ", Math.round(6.55), "<br/>");//四舍五入
+      document.write("Math.log(10) = ", Math.log(10), "<br/>");
+      document.write("Math.log10(10) = ", Math.log10(10), "<br/>");
+      document.write("Math.max(10,5) = ", Math.max(10,5), "<br/>");
+      document.write("Math.min(10,5) = ", Math.min(10,5), "<br/>");
+      document.write("Math.pow(4,2) = ", Math.pow(4,2), "<br/>");
+
+      //随机数
+      document.write("Random # (1-10) = ", Math.floor((Math.random() * 10) + 1), "<br/>");//取了从1到10的随机整数，random()只能取0到1之间的数字，可取0，不可取1
+      
+      //字符串转换成数值
+      document.write("Converted String : ", Number("3.14"), "<br/>");
+      document.write("Converted Int : ", parseInt("5"), "<br/>");
+      document.write("Converted Float : ", parseFloat("3.14"), "<br/>");
+    </script>
+  </body>
+</html>
